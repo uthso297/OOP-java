@@ -1,6 +1,8 @@
 public class Main {
     int x=5;
     int y;
+    int modelYear;
+    String modelName;
     static void method(){
         for(int i=0;i<=10;i++){
             System.out.println(i);
@@ -15,6 +17,15 @@ public class Main {
     public void speed(int maxspeed){
             System.out.println("Max speed is " +maxspeed);
     }
+    public Main(){
+    }
+    public Main(int r){
+        x=r;
+    }
+    public Main(int year,String name){
+        modelYear = year;
+        modelName = name;
+    }
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         Main myObj1 = new Main();
@@ -28,5 +39,9 @@ public class Main {
         Main myCar = new Main();
         myCar.car();
         myCar.speed(59);
+        Main myObj4 = new Main(5);
+        System.out.println(myObj4.x);
+        Main myObj5 = new Main(2011,"Tesla");
+        System.out.println(myObj5.modelYear + " " + myObj5.modelName);
     }
 }
