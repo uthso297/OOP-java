@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     int x=5;
     int y;
@@ -43,5 +45,9 @@ public class Main {
         System.out.println(myObj4.x);
         Main myObj5 = new Main(2011,"Tesla");
         System.out.println(myObj5.modelYear + " " + myObj5.modelName);
+        Scanner myObj6 = new Scanner(System.in);
+        System.out.println("Enter User Name: ");
+        String Username = myObj6.nextLine();
+        System.out.println("Username is: " + Username);
     }
 }
