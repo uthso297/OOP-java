@@ -28,6 +28,7 @@ public class Main {
         modelYear = year;
         modelName = name;
     }
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         Main myObj1 = new Main();

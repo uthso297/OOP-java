@@ -1,4 +1,4 @@
- class Student{
+ class Student1{
 
     String name;
     int age;
@@ -9,11 +9,11 @@
     }
 
     // no parameter constructor
-    Student(){
+    Student1(){
         System.out.println("Constructor called");
     }
     // parameter constructor
-    Student(String name,int age){
+    Student1(String name,int age){
         this.name = name;
         this.age = age;
     }
@@ -23,7 +23,7 @@ public class Constructor {
        
         // student class
         
-        Student s1 = new Student("Uthso", 23);
+        Student1 s1 = new Student1("Uthso", 23);
         
         /* 
 
