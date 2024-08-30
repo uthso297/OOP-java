@@ -17,7 +17,7 @@ class Pen {
 
     String name;
     int age;
-    
+    static String school;
     public void printInfo(){
         System.out.println(this.name);
         System.out.println(this.age);
@@ -40,11 +40,11 @@ public class OOPS {
         pen2.printColor();
 
         // student class
-
+        Student.school = "JABP";
         Student s1 = new Student();
         s1.name = "Uthso";
         s1.age = 23;
-
+        System.out.println(s1.school);
         s1.printInfo();
     }
 }
